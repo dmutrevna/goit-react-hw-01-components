@@ -3,7 +3,7 @@ import { FriendName, ListItem, ImageFriend, Status } from './Friends.styled';
 
 export const Friend = ({ avatar, name, isOnline }) => {
   return (
-    <ListItem key={Friend.id}>
+    <ListItem>
       <Status online={isOnline}>{isOnline}</Status>
       <ImageFriend src={avatar} alt="User avatar" width="48" />
       <FriendName>{name}</FriendName>
@@ -15,5 +15,4 @@ Friend.propTypes = {
   avatar: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   isOnline: PropTypes.bool.isRequired,
-  id: PropTypes.number,
 };
