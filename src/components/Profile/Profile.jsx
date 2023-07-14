@@ -10,6 +10,9 @@ import {
   StatItem,
   Label,
   Quantity,
+  StyledIcon,
+  StyledIconView,
+  StyledIconFollow,
 } from './Profile.styled';
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
@@ -24,14 +27,17 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
 
       <Stats>
         <StatItem>
-          <Label>Followers</Label>
+          <StyledIconFollow />
+          <Label> Followers</Label>
           <Quantity>{stats.followers}</Quantity>
         </StatItem>
         <StatItem>
+          <StyledIconView />
           <Label>Views</Label>
           <Quantity>{stats.views}</Quantity>
         </StatItem>
         <StatItem>
+          <StyledIcon />
           <Label>Likes</Label>
           <Quantity>{stats.likes}</Quantity>
         </StatItem>

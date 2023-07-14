@@ -1,4 +1,7 @@
 import styled from 'styled-components';
+import { GiSelfLove } from 'react-icons/gi';
+import { GrFormView } from 'react-icons/gr';
+import { RiUserFollowLine } from 'react-icons/ri';
 
 export const ProfileContainer = styled.div`
   align-items: center;
@@ -65,4 +68,21 @@ export const Label = styled.span`
 export const Quantity = styled.span`
   font-size: 14px;
   color: gray;
+`;
+
+export const StyledIcon = styled(GiSelfLove)`
+  color: black;
+  font-size: 14px;
+  margin-right: 5px;
+`;
+
+export const StyledIconView = styled(GrFormView)`
+  color: black;
+  font-size: 20px;
+`;
+
+export const StyledIconFollow = styled(RiUserFollowLine)`
+  color: black;
+  font-size: 14px;
+  margin-right: 5px;
 `;
